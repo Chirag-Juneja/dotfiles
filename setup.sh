@@ -1,17 +1,19 @@
 #!/bin/bash
 
 echo "Installing dependencies ..."
-sudo apt-get install tmux fonts-powerline
+sudo apt-get install tmux fonts-powerline neofetch
 
 
 echo "Cloning Repositories ..."
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
-git clone --recursive https://github.com/andresgongora/synth-shell.git
+cp tmux.conf ~/.tmux.conf
 
-echo "Installing Synth Shell ..."
-chmod +x synth-shell/setup.sh
-cd synth-shell
-./setup.sh
+echo "
+export LC_ALL=en_US.UTF-8 
+export LANG=en_US.UTF-8 
+neofetch
+" >> ~/.bashrc
 
-cp .tmux.conf ~/.tmux.conf
+cp HackNerdFont-Regular.ttf ~/.local/share/fonts/
+
