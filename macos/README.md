@@ -10,7 +10,13 @@
 brew install neovim
 ```
 
-Clone Tmux Plugins Manager 
+### Clone Tmux Plugins Manager 
 ```
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 ```
+
+### Install Fira Code Font
+```
+brew install --cask homebrew/cask-fonts/font-fira-code-nerd-font
+```
+
