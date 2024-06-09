@@ -36,7 +36,22 @@
     - ```git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting```
     
     `plugins=(git cp history colorize zsh-autosuggestions zsh-syntax-highlighting)` 
-    
+
+### Setup TMUX
+
+1. Install TMUX
+
+    ``` sudo apt-get install tmux ```
+
+2. Install tpm
+
+    ``` git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm ```
+
+3. Copy tmux.conf
+
+    ``` cp dotfiles/linux/tmux.conf ~/.tmux.conf```
+
+4. Install pluggins `prefix+I`
 
 ### Setup Python
 
