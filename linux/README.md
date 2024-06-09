@@ -2,7 +2,7 @@
 
 ### Install Dependencies
 
-``` sudo apt-get install curl neofetch```
+``` sudo apt-get install curl neofetch ripgrep```
 
 ### Setup ZSH
 
@@ -52,6 +52,25 @@
     ``` cp dotfiles/linux/tmux.conf ~/.tmux.conf```
 
 4. Install pluggins `prefix+I`
+
+### Setup NVIM
+
+1. Install nvim (Needs neovim version >=10.0)
+    ```
+    $ sudo add-apt-repository ppa:neovim-ppa/unstable
+    $ sudo apt-get update
+    $ sudo apt-get install neovim
+    ```
+
+2. Install Packer
+
+    ```git clone --depth 1 https://github.com/wbthomason/packer.nvim ~/.local/share/nvim/site/pack/packer/start/packer.nvim```
+
+3. Clone cnvim
+
+    ```git clone https://github.com/Chirag-Juneja/cnvim ~/.config/nvim```
+
+4. Install Plugins, navitage to `packer.lua`, source the file `:so` run packer sync `:PackerSync`
 
 ### Setup Python
 
