@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo "Installing dependencies ..."
-sudo apt-get install tmux fonts-powerline neofetch
+sudo dnf install tmux fonts-powerline neofetch
 
 
 echo "Cloning Repositories ..."

@@ -55,26 +55,17 @@
 
 ### Setup NVIM
 
-1. Install nvim (Needs neovim version >=10.0)
-    ```
-    $ sudo add-apt-repository ppa:neovim-ppa/unstable
-    $ sudo apt-get update
-    $ sudo apt-get install neovim
-    ```
+Clone nvim repo into your config folder:
 
-2. Install Packer
+```git clone https://github.com/Chirag-Juneja/nvim ~/.config/nvim```
 
-    ```git clone --depth 1 https://github.com/wbthomason/packer.nvim ~/.local/share/nvim/site/pack/packer/start/packer.nvim```
-
-3. Clone cnvim
-
-    ```git clone https://github.com/Chirag-Juneja/cnvim ~/.config/nvim```
-
-4. Install Plugins, navitage to `packer.lua`, source the file `:so` run packer sync `:PackerSync`
-
-### Setup Python
-
-1. Install Miniconda 
-    - Download & run install script.
-    - Enable Auto Initiallize 
-
+### Install Lazygit
+Install lazygit for source control 
+```
+sudo dnf copr enable dejan/lazygit
+sudo dnf install lazygit
+```
+### Add Scripts
+```
+sudo ln -s ~/Developer/dotfiles/linux/scripts/backup.sh /usr/local/bin/backup
+```
